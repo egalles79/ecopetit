@@ -1,0 +1,18 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^www\.ecopetit\.cat$ [NC]
+RewriteRule ^(.*)$ http://www.ecopetit.cat/$1 [R=301,L]
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+#RewriteCond %{REQUEST_URI} (index\.php|webroot/|images/|css/|js/|robots\.txt|favicon\.ico)
+#RewriteRule ^(images|css|files|js)/(.*)$ webroot/$1/$2 [L]
+#RewriteRule ^productesNous/(.+)$ productesNous/index/$1 [L]
+#RewriteRule ^(.+)-nous.php$ ProductesNous.php?idCategoria=$1 [L]
+#RewriteRule ^(.+)-nuevos.php$ ProductesNous.php?idCategoria=$1 [L]
+#RewriteRule ^(.+)-seminous.php$ ProductesSeminous.php?idCategoria=$1 [NC,L,QSA]
+#RewriteRule ^(.+)-seminuevos.php$ ProductesSeminous.php?idCategoria=$1 [NC,L,QSA]
+RewriteRule ^(favicon\.ico)$ webroot/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+

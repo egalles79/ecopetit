@@ -1,0 +1,25 @@
+span.cloner-menu {
+	height:16px;
+	width:16px;
+	margin-right:5px!important;
+	padding:1px 6px!important;
+	background:url(../img/clone_icon.png) no-repeat 0 0;
+}
+
+
+div#icon-cloner-admin {
+	background:url(../img/clone_menu.png) no-repeat 0 0!important;
+	}
+
+table.cloner_admin td select { min-width:130px;}
+table.cloner_admin input.medium-text {width: 19em;}
+
+/* these 4 lines are the most important with respect to styling the control */
+.calendar{border:1px solid #aaa;background:#555;font-family:verdana;font-size:12px;}
+.calendar table{color:#fff;}
+.calendar table td.hover{background:#ffc;color:#444;}
+.calendar .selected{border:1px dotted #999;}
+
+.calendar{overflow:auto;width:250px;height:175px;position:absolute;line-height:1em;border-radius:5px;-moz-user-select:none;-webkit-user-select: none;-khtml-user-select: none;user-select: none;}
+.calendar table{width:100%;height:100%;color:#fff;}
+.calendar table td{padding:3px;text-align:center;cursor:pointer;border-radius:2px;}
